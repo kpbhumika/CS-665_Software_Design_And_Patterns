@@ -1,9 +1,13 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: BHUMIKA KUSUGOLLI PARAMESWARA
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 09/28/2024
  * File Name: Main.java
- * Description: Write a description for this class
+ * Description: The main method serves as the entry point for the Vending Machine application,
+ * where it initializes a VendingMachine instance to prepare a "Latte Macchiato" with 3 units each of milk and sugar.
+ * It retrieves and displays the added condiments along with their quantities, prints the base price of the beverage,
+ * and calculates the total price including the cost of condiments. This method effectively demonstrates the
+ * application's functionality, allowing users to see their customized beverage order and its pricing.
  */
 
 package edu.bu.met.cs665;
