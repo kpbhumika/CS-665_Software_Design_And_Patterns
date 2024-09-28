@@ -2,9 +2,9 @@ package edu.bu.met.cs665.assignment1;
 
 public class Condiment {
 
-    private String type;
-    private int units;
-    private double pricePerUnit;
+    private final String type;
+    private final int units;
+    private final double pricePerUnit;
 
     public Condiment(String type, int units, double pricePerUnit) {
         if (units < 0 || units > 3) {
