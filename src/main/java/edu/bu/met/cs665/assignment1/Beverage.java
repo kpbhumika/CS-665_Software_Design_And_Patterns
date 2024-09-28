@@ -6,9 +6,9 @@ import java.util.List;
 // Declaring an abstract class
 public abstract class Beverage {
 
-    private String name;
-    private double basePrice;
-    private List<Condiment> condiments = new ArrayList<>();
+    private final String name;
+    private final double basePrice;
+    private final List<Condiment> condiments = new ArrayList<>();
 
     // constructor
     public Beverage(String name, double basePrice){
