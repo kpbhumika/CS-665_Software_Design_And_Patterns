@@ -46,7 +46,7 @@ Code duplication is minimized through inheritance:
 
 5. Design Patterns
 
-The implementation uses the Factory Method pattern in the VendingMachine class, which creates beverage instances based on user input. This allows for future expansion without altering existing code.
+The implementation does not use any patterns.
 
 
 # Maven Commands
