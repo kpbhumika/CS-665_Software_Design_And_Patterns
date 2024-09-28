@@ -7,8 +7,9 @@
  */
 
 package edu.bu.met.cs665;
-
-import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.assignment1.*;
+import java.util.Scanner;
+//import edu.bu.met.cs665.example1.Person;
 
 /**
  * This is the Main class.
@@ -21,18 +22,25 @@ public class Main {
    * assignments/final project.  This could prove convenient to test as you are developing.
    * However, please note that every assignment/final projects requires JUnit tests.
    */
+
+  //Assignment 1
+
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
-  }
+      VendingMachine vendingMachine = new VendingMachine();
 
-  /**
-   * This method performs XYZ and returns String.
-   *
-   * @return String
-   */
-  private String doIt() {
-    Person student = new Person("John", "Doe");
-    return student.getLastName() + ',' + student.getFirstName();
-  }
+      // Prepare a beverage with milk and sugar
+      Beverage beverage = vendingMachine.prepareBeverage("Latte Macchiato", 3, 3);
 
+      // Print the added condiments
+      System.out.println("Condiments:");
+      for (Condiment condiment : beverage.getCondiments()) {
+          System.out.println("- " + condiment.getType() + ": " + condiment.getUnits() + " units");
+      }
+
+      System.out.println("Base Price: $" + beverage.getBasePrice());
+
+      // Calculate and print the final price
+      double totalPrice = vendingMachine.calculatePrice(beverage);
+      System.out.println("Total Price: $" + totalPrice);
+  }
 }
